@@ -1,6 +1,6 @@
 class HomePage {
   elements = {
-    menuItem: (item) => cy.get(`li#nav-${item} a`),
+    menuItem: (item) => cy.get(`li#nav-${item.toLowerCase()} a`),
   };
 
   selectMenuItem(item) {
